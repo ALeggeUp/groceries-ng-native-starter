@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
   template: `
     <StackLayout>
       <Image src="res://logo_login" stretch="none" horizontalAlignment="center"></Image>
-      <TextField hint="Email Address" keyboardType="email"
+      <TextField hint="Email Address" keyboardType="email" [(ngModel)]="email"
         autocorrect="false" autocapitalizationType="none"></TextField>
       <TextField hint="Password" secure="true"></TextField>
 
@@ -18,8 +18,11 @@ import { Component } from "@angular/core";
 
 export class AppComponent {
 
+  email = '';
+
   submit() {
     console.log(`hello ${new Date()}`);
+    alert("You’re using: " + this.email);
   }
 
 }
