@@ -13,4 +13,5 @@ import { Component } from "@angular/core";
     </StackLayout>
   `
 })
+
 export class AppComponent {}
