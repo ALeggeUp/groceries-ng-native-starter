@@ -11,7 +11,8 @@ import { Component } from "@angular/core";
       <Button text="Sign in"></Button>
       <Button text="Sign up for Groceries"></Button>
     </StackLayout>
-  `
+  `,
+  styleUrls: ["pages/login/login-common.css", "pages/login/login.css"]
 })
 
 export class AppComponent {}
